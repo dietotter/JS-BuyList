@@ -1,3 +1,87 @@
-h1 {
-    color: red;
+.col-background {
+    background: gainsboro;
+    width: 100%;
+    
+}
+
+.col-center{
+    background: gainsboro;
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    position: relative;
+}
+
+.col-one {
+    background: white;
+    margin: 10px;
+    width: 60%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.col-two {
+    background: white;
+    margin: 10px;
+    width: 40%;
+    position: relative;
+}
+
+.col-one-submit {
+    margin: 10px;
+    position:relative;
+}
+
+.col-one-submit button{
+    background: lightblue;
+    position: absolute;
+    
+   
+}
+
+.col-one-product{
+    margin: 10px;
+    
+}
+
+.col-one-minus {
+    background: red;
+}
+
+.col-one-amount {
+    background: gainsboro;
+    padding: 2px;
+}
+
+.col-one-plus {
+    background: green;
+}
+
+.col-one-bought {   
+    background: gainsboro;
+}
+
+.col-one-x {
+    background: red;
+}
+
+.col-two-left {
+    margin: 10px;
+}
+
+.col-two-left-exact {
+    background: gainsboro;
+    margin: 5px;
+    padding: 5px;
+}
+
+.col-two-left-number {
+    background: orange;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.col-two-bought {
+    margin: 10px;
 }
