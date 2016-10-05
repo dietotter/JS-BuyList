@@ -9,75 +9,84 @@
 </head>
     
 <body>
-    <div class="col-background">
-        <div class="col-center">
-            <div class="col-one">
+    <div class="buylist-background">
+            <div class="buylist-col-one">
 
-                <div class="col-one-submit">
+                <div class="submit">
                     <input type="text" placeholder="Enter your product">
-                    <button>Додати</button>
+                    <button data-tooltip="Додати товар">Додати</button>
 
                 </div>
 
-                <div class="col-one-product">
-                    <span class="col-one-exact">Помідори</span>
-                    <span class="col-one-operations-1">
-                        <button class="col-one-minus">-</button>
-                        <span class="col-one-amount">3</span>
-                        <button class="col-one-plus">+</button>
-                    </span>
-                    <span class="col-one-operations-2">
-                        <button class="col-one-bought">Куплено</button>
-                        <button class="col-one-x">х</button>
-                    </span>
+                <div class="product-list">
+                    <div class="product-list-row">
+                        <div class="product-name">Помідори</div>
+                        <div class="middle-operations">
+                            <button class="product-minus" data-tooltip="Зменшити кількість">-</button>
+                            <span class="product-number">3</span>
+                            <button class="product-plus" data-tooltip="Збільшити кількість">+</button>
+                        </div>
+                        <div class="right-operations">
+                            <button class="product-bought" data-tooltip="Товар куплено">Куплено</button>
+                            <button class="product-delete" data-tooltip="Видалити товар">х</button>
+                        </div>
+                    </div>
+                    <div class="product-list-row">
+                        <div class="product-name">more Помідори</div>
+                        <div class="middle-operations">
+                            <button class="product-minus" data-tooltip="Зменшити кількість">-</button>
+                            <span class="product-number">3</span>
+                            <button class="product-plus" data-tooltip="Збільшити кількість">+</button>
+                        </div>
+                        <div class="right-operations">
+                            <button class="product-bought" data-tooltip="Товар куплено">Куплено</button>
+                            <button class="product-delete" data-tooltip="Видалити товар">х</button>
+                        </div>
+                    </div>
+                    <div class="product-list-row">
+                        <div class="product-name">even more Помідори</div>
+                        <div class="middle-operations">
+                            <button class="product-minus" data-tooltip="Зменшити кількість">-</button>
+                            <span class="product-number">3</span>
+                            <button class="product-plus" data-tooltip="Збільшити кількість">+</button>
+                        </div>
+                        <div class="right-operations">
+                            <button class="product-bought" data-tooltip="Товар куплено">Куплено</button>
+                            <button class="product-delete" data-tooltip="Видалити товар">х</button>
+                        </div>
+                    </div>
+                    
                 </div>
+            </div>            
 
-                <div class="col-one-product">
-                    <span>Печиво</span>
-                    <button class="col-one-minus">-</button>
-                        <span class="col-one-amount">3</span>
-                    <button class="col-one-plus">+</button>
-                    <button class="col-one-bought">Куплено</button>
-                    <button class="col-one-x">х</button>
-                </div>
 
-                <div class="col-one-product">
-                    <span>Сир</span>
-                    <button class="col-one-minus">-</button>
-                    <span class="col-one-amount">3</span>
-                    <button class="col-one-plus">+</button>
-                    <button class="col-one-bought">Куплено</button>
-                    <button class="col-one-x">х</button>
-                </div>
-            </div>
-
-            <div class="col-two">
-                <div class="col-two-left">
-                    <h3>Залишилося</h3>
-                </div>
-                <div class="col-two-left-products">
-                    <span class="col-two-left-exact">
-                        <span class="col-two-left-string">Помідори</span>
-                        <span class="col-two-left-number">1</span>
-                    </span>
-
-                    <span class="col-two-left-exact">
-                        <span class="col-two-left-string">Печиво</span>
-                        <span class="col-two-left-number">1</span>
-                    </span>
-
-                    <span class="col-two-left-exact">
-                        <span class="col-two-left-string">Сир</span>
-                        <span class="col-two-left-number">1</span>
-                    </span>
+            <div class="buylist-col-two">
+                <h3>Залишилося</h3>
+                <div class="product-left-list">
+                    <div class="product-left">
+                        <span class="product-left-name">Помідори</span>
+                        <span class="product-left-number">3</span>
+                    </div>
+                    <div class="product-left">
+                        <span class="product-left-name">more Помідори</span>
+                        <span class="product-left-number">3</span>
+                    </div>
+                    <div class="product-left">
+                        <span class="product-left-name">even more Помідори</span>
+                        <span class="product-left-number">3</span>
+                    </div>
 
                 </div>
-                <div class="col-two-bought">
-                    <h3>Куплене</h3>
-                </div>
-            </div>
+                <h3>Куплене</h3>
+            
         </div>
     
+    </div>
+    
+    <div class="surname-badge">
+        <h1>Buy List</h1>
+        <h3>Created by:</h3>
+        <h2>Nikita Barabash</h2>
     </div>
     
 </body>
