@@ -13,41 +13,18 @@
             <div class="buylist-col-one">
 
                 <div class="submit">
-                    <input type="text" placeholder="Enter your product">
-                    <button data-tooltip="Додати товар">Додати</button>
+                    <input class="submit-input" type="text" placeholder="Enter your product">
+                    <button id="submit-button" data-tooltip="Додати товар">Додати</button>
 
                 </div>
 
                 <div class="product-list">
-                    <div class="product-list-row">
-                        <div class="product-name">Помідори</div>
+                    <div class="product-list-row hidden">
+                        <div class="product-name"></div>
+                        <input class="change-product-name hidden" type="text" placeholder="Назва товару">
                         <div class="middle-operations">
-                            <button class="product-minus" data-tooltip="Зменшити кількість">-</button>
-                            <span class="product-number">3</span>
-                            <button class="product-plus" data-tooltip="Збільшити кількість">+</button>
-                        </div>
-                        <div class="right-operations">
-                            <button class="product-bought" data-tooltip="Товар куплено">Куплено</button>
-                            <button class="product-delete" data-tooltip="Видалити товар">х</button>
-                        </div>
-                    </div>
-                    <div class="product-list-row">
-                        <div class="product-name">more Помідори</div>
-                        <div class="middle-operations">
-                            <button class="product-minus" data-tooltip="Зменшити кількість">-</button>
-                            <span class="product-number">3</span>
-                            <button class="product-plus" data-tooltip="Збільшити кількість">+</button>
-                        </div>
-                        <div class="right-operations">
-                            <button class="product-bought" data-tooltip="Товар куплено">Куплено</button>
-                            <button class="product-delete" data-tooltip="Видалити товар">х</button>
-                        </div>
-                    </div>
-                    <div class="product-list-row">
-                        <div class="product-name">even more Помідори</div>
-                        <div class="middle-operations">
-                            <button class="product-minus" data-tooltip="Зменшити кількість">-</button>
-                            <span class="product-number">3</span>
+                            <button class="product-minus not-active" data-tooltip="Зменшити кількість">-</button>
+                            <span class="product-number">1</span>
                             <button class="product-plus" data-tooltip="Збільшити кількість">+</button>
                         </div>
                         <div class="right-operations">
@@ -63,22 +40,15 @@
             <div class="buylist-col-two">
                 <h3>Залишилося</h3>
                 <div class="product-left-list">
-                    <div class="product-left">
-                        <span class="product-left-name">Помідори</span>
-                        <span class="product-left-number">3</span>
-                    </div>
-                    <div class="product-left">
-                        <span class="product-left-name">more Помідори</span>
-                        <span class="product-left-number">3</span>
-                    </div>
-                    <div class="product-left">
-                        <span class="product-left-name">even more Помідори</span>
-                        <span class="product-left-number">3</span>
+                    <div class="product-left hidden">
+                        <span class="product-left-name"></span>
+                        <span class="product-left-number">1</span>
                     </div>
 
                 </div>
                 <h3>Куплене</h3>
-            
+                <div class="product-bought-list">
+                </div>
         </div>
     
     </div>
@@ -88,6 +58,9 @@
         <h3>Created by:</h3>
         <h2>Nikita Barabash</h2>
     </div>
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
+    <script type="text/javascript" src="main.js"></script>
     
 </body>
     

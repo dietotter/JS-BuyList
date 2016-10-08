@@ -75,6 +75,18 @@ body {
     margin-right: auto;
 }
 
+.hidden {
+    display: none !important;
+}
+
+.buylist-col-one > .product-list > .product-list-row > .change-product-name {
+    margin-right: auto;
+    display: inline-block;
+    font-size: 10px;
+    border: 1px solid gainsboro;
+    padding: 3px;
+}
+
 .buylist-col-one > .product-list > .product-list-row > .middle-operations {
     position: absolute;
     left:40%;
@@ -98,6 +110,11 @@ body {
     border: 0px;
     padding-bottom:3px;
     border-bottom: 3px solid #C00;
+}
+
+.buylist-col-one > .product-list > .product-list-row > .middle-operations > .not-active {
+    opacity: 0.5;
+    pointer-events: none;
 }
 
 .buylist-col-one > .product-list > .product-list-row > .middle-operations > .product-plus {
@@ -138,6 +155,18 @@ body {
     border-bottom: 3px solid #AA143C;
 }
 
+.state-bought > .product-name {
+    text-decoration: line-through;
+}
+
+.state-bought > .middle-operations button {
+    visibility: hidden;
+}
+
+.state-bought > .right-operations > .product-delete {
+    display: none;
+}
+
 .buylist-col-two > *{
     padding-left: 10px;
     padding-bottom: 15px;
@@ -148,25 +177,28 @@ body {
     font-size: 15px;
 }
 
-.buylist-col-two > .product-left-list > .product-left {
+.product-left {
     display: inline-block;
     font-size: 11px;
     padding: 6px;
     border-radius: 5px;
     background-color: #EEE;
-    margin-top:1px;
-    margin-bottom: 1px;
+    margin: 1px;
 }
 
-.buylist-col-two > .product-left-list > .product-left > .product-left-name{
+.product-left > .product-left-name{
     color: #666;
 }
 
-.buylist-col-two > .product-left-list > .product-left > .product-left-number{
+.product-left > .product-left-number{
     padding: 3px 6px;
     border-radius: 100%;
     background-color: darkorange;
     color: white;
+}
+
+.buylist-col-two > .product-bought-list > .product-left > .product-left-name{
+    text-decoration: line-through;
 }
 
 .surname-badge {
